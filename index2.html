@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mail</title>
+
+  <link rel="stylesheet" href="style_bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row"> 
+        <!--Header component-->
+        <div class="row headerrr">
+        <div class="col-sm-12 col-md-12 col-xl-6">
+          <a class="navbar-brand" href="#">Navbar</a>
+           <form class="d-flex" role="search">
+            <input class="border h-100 form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn search_btn btn-outline-success mb-2 navbar_2" type="submit">Search</button>
+          </form>
+        <nav class="navbar navbar_section d-xl-none bg-body-tertiary navbar_size">
+            <div class="container-fluid ">
+              <div class="d-xl-none">
+            </div>
+          </div>
+              <button class="d-xl-none navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="d-xl-none collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="buttons_nav navbar-nav me-auto mb-2 mb-xl-0 mt-2">
+                  <li class="nav-item btn_navbar">
+                    <a class="nav-link active " aria-current="page" href="#">All messages</a>
+                  </li>
+                  <li class="nav-item btn_navbar mt-1">
+                    <a class="nav-link" href="#">Sent</a>
+                  </li>
+                  <li class="nav-item btn_navbar mt-1 mb-1">
+                    <a class="nav-link" href="#">Spam</a>
+                  </li>
+
+                  <!--Compose button-->
+                  <button type="button" class="btn w-100 btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Compose</button>
+                </ul>
+            </div>
+          </nav>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+  </div>
+
+  <div class="d-none d-xl-block col-xl-2 ">
+    <nav class="navbar bg-body-tertiary nav_barXL2">
+      <ul class="navbar-nav">
+    <li class="nav-item mb-1 nav_bar_xl">
+      <a class="nav-link active" aria-current="page" href="#">All messages</a>
+    </li>
+    <li class="nav-item mb-1 nav_bar_xl">
+      <a class="nav-link" href="#">Sent</a>
+    </li>
+    <li class="nav-item mb-1 nav_bar_xl">
+      <a class="nav-link " href="#">Spam</a>
+    </li>
+  </ul>
+  </nav>
+  </div>
+        <!--E-mail list-->
+        <div class="col-sm-12 col-md-4 col-xl-4 mt-3">
+                <div class="card mb-4 shadow">
+                  <div class="card-body">
+                    <h4 class="card-title">Message1</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">From: user1@gmail.com</h6>
+                    <p class="card-text">Here should be the topic message for user number 1.</p>
+                  </div>
+                </div>
+        
+                <div class="card mb-4 shadow border-md border-0">
+                  <div class="card-body">
+                    <h4 class="card-title">Message2</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">From: user2@gmail.com</h6>
+                    <p class="card-text mb-2">Here should be the topic message for user number 2.</p>
+                  </div>
+                </div>
+        
+                <div class="card mb-4 shadow">
+                  <div class="card-body">
+                    <h4 class="card-title">Message3</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">From: user3@gmail.com</h6>
+                    <p class="card-text">Here should be the topic message for user number 3.</p>
+                  </div>
+                </div>
+        </div>
+
+        <!--Body_e-mail-->
+        <div class="d-none d-md-block col-md-7 offset-md-1 col-xl-5 opened-email mt-3 email-block">
+          <div class="row">
+            <h4>From: user@gmail.com</h4>
+            <h4>Subject: Here should be the topic message for user number 1.</h4>
+          </div>
+  
+          <div class=" card row m-5">
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+            </p>
+            <button type="button" class="btn w-100 btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Reply</button>
+            
+          </div>
+        </div>
+    </div>
+</div>
+<footer>
+  <div class="col-sm-12 col-md-12 col-xl-12 footer_section">
+    <div class="footer_section1 mt-30">
+      <h4>Created by Sergiy Kovach</h4>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+      new bootstrap.Tooltip(t)
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.container-fluid{
+    background-image: linear-gradient( to bottom right, #009245, #FCEE21 );
+}
+
+.btn_navbar{
+    background-color: rgb(51, 153, 212);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn_navbar:hover{
+    background-color: rgb(19, 100, 147);
+}
+
+.navbar_2{
+    border-radius: 2;
+}
+
+.nav_bar_xl{
+    background-color: rgb(51, 153, 212);
+    width: 177px;
+    border-radius: 4px;
+}
+
+.nav_bar_xl:hover{
+    background-color: rgb(19, 100, 147);
+}
+
+.nav_barXL2{
+    height: 143px;
+    text-align: center;
+    width: 176px;
+}
+
+.email-block{
+    margin-top: 5px;
+    background-color:rgb(255, 254, 252);
+    border: 2px;
+    border-radius: 4px;
+}
+
+.navbar_size{
+    max-width: 600px;
+}
+
+.footer_section{
+    background-color: #009245;
+    height: 150px;
+}
+
+.footer_section1{
+    display: flex;
+    justify-content:center;
+    font-weight: bold;
+}
